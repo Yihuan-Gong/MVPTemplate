@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>MVP.cs</DefaultName>
+    <Name>MVP</Name>
+    <Description>&lt;建造MVP模板&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>MVPExtension</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem TargetFileName="Presenters/I$fileinputname$Presenter.cs" ReplaceParameters="true">Presenters/IPresenter.cs</ProjectItem>
+    <ProjectItem TargetFileName="Presenters/$fileinputname$Presenter.cs" ReplaceParameters="true">Presenters/Presenter.cs</ProjectItem>
+    <ProjectItem TargetFileName="Views/A$fileinputname$View.cs" ReplaceParameters="true">Views/AView.cs</ProjectItem>
+    <ProjectItem TargetFileName="Views/A$fileinputname$View.Designer.cs" ReplaceParameters="true">Views/AView.Designer.cs</ProjectItem>
+    <ProjectItem TargetFileName="Views/$fileinputname$View.cs" ReplaceParameters="true">Views/View.cs</ProjectItem>
+        <!-- <ProjectItem TargetFileName="A$fileinputname$View.resx" ReplaceParameters="true">AView.resx</ProjectItem> -->
+  </TemplateContent>
+</VSTemplate>
